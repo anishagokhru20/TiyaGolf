@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/fdd870ea48.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        font-family: sans-serif;
+      }
+    .first-section{
+      background-image: url("anna-rosar-ZxFyVBHMK-c-unsplash.jpg");
+      background-size: 100%,70%;
+      height: 740px;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+     }
+     /* .header::after{
+      background-image: url("anna-rosar-ZxFyVBHMK-c-unsplash.jpg");
+      background-size: 100%,70%;
+      content:"";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left:0;
+      z-index: -1;
+      padding: 0;
+      margin: 0;
+      opacity: 0.8;
+
+     } */
+     
+     .header-left-section{
+         position: absolute;
+         top:0;
+         display: flex;
+         /* border: 1px solid aqua; */
+         column-gap: 10px;
+         left: 100px;
+         top: 30px;
+     }
+     .header-left-section img{
+       /* border: 1px solid aqua; */
+       height: 55px;
+       filter: brightness(0) invert(1);   
+     }
+
+     .header-left-section div h1{
+        display: flex;
+        color: white;
+        padding: 0;
+        margin: 0;
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:23px;
+     }
+     .header-left-section div p{
+        color: white;
+        padding: 0;
+        margin: 0;
+         font-size:10px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-weight:700;
+     }
+     .header-right-section{
+        /* border: 1px solid white; */
+        position:absolute;
+        top: 25px;
+        right: 70px;
+        width: 60%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+     }
+     .header-right-section a{
+      color: white;
+      font-weight: 600;
+      font-family:DM Sans, sans-serif;
+
+    }
+    .header-right-section button{
+      font-family:DM Sans, sans-serif;
+      width:130px;
+      height: 45px;
+      border-radius: 40px;  
+      background-color: #3d405b;
+      color: #F6DCB1;
+      border: 1px solid #F2CC8F;
+      font-weight:bolder;
+    }
+    .header-right-section button:hover{
+      background-color:#F6DCB1;
+      color:#FFFFFF;
+    }
+    .main-content{
+      border:1px solid black;
+      position: relative;
+      top: -600px;
+      width: 50%;
+      left:60px;
+      
+    }
+    .main-content div:nth-child(1){
+      color:white;
+      font-weight: bolder;
+      font-size: 30px;
+      font-family:DM Sans, sans-serif;
+    }
+    .main-content div:nth-child(2){
+      color:white;
+      font-family:DM Sans, sans-serif;
+      display: flex;
+      column-gap: 20px;
+    }
+    .main-content h3{
+      margin: 0;
+      margin-top: 10px;
+    }
+    .main-content button{
+      background-color: #F2CC8F;
+      width: 100px;
+      height: 45px;
+      border:none;
+      border-radius: 40px;
+      color:white;
+      font-weight: bolder;
+    }
+    .main-content button:hover{
+       background-color:#dc3545;
+    }
+    .youtube{
+       position: absolute;
+       left:0;
+    }
+    .second-section{
+       /* border: 1px solid black; */
+       height: 400px;
+    }
+    .second-section-content{
+      display: flex;
+      height: 300px;
+    }
+    .second-section-heading{
+        /* border: 1px solid blue; */
+        height: 80px;
+    }
+    .second-section-content-first{
+       /* border: 1px solid black; */
+       width:50%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .second-section-content-first p{
+      width: 70%;
+      font-size: 17px;
+      font-family:DM Sans, sans-serif;
+    }
+    .second-section-content-second , .second-section-content-third{
+      /* border: 1px solid black; */
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+    .second-section-content-second img,.second-section-content-third img{
+       width:95%;
+       height:100%;
+       border-radius: 15%;  
+    }
+    .second-section-content-second span , .second-section-content-third span{
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .second-section-content-second div:nth-child(2) ,.second-section-content-third div:nth-child(2){
+       display: flex;
+       justify-content: space-between;
+    }
+    .third-section{
+      background-image: url("../Template/images/frederik-rosar-NDSZcCfnsbY-unsplash.jpg");
+      background-size: 100% 100%;
+      /* border: 1px solid black; */
+      height: 800px;
+    }
+    .third-section-box{
+       /* border: 1px solid black; */
+       width: 580px;
+       height:300px;
+       background-color: #FFFFFF;
+       position: relative;
+       left: 80px;
+       bottom: 120px;
+       opacity:0.8;
+       border-radius: 40px;
+    }
+    .third-section-box-header{
+       width:100%;
+       height: 80px;
+       /* border: 1px solid black; */
+       display: flex;
+       align-items: center;
+       position: relative;
+       top: 18px;
+       left: 45px;
+       font-size: 23px;
+       font-family:DM Sans, sans-serif;
+    }
+    .third-section-box-content{
+        display: flex;
+        width: 100%;
+        height: 80px;
+        justify-content: center;
+        font-family:DM Sans, sans-serif;
+        color:gray;
+    }
+    .third-section-box2{
+       width:32%;
+       height: 65px;
+       /* border:1px solid black; */
+       background-color: #FFFFFF;
+       border-radius: 40px;
+       position: relative;
+       bottom: 250px;
+       left: 100px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+      }
+      .third-section-box2 div:nth-child(1){
+         position: relative;
+         left: 18px;
+      }
+      .third-section-box2 div:nth-child(2){
+         position: relative;
+         right: 18px;
+      }
+      .third-section-box2 div:nth-child(2) button:hover{
+          cursor: pointer;
+          background-color: #dc3545;
+      }
+      .third-section-box2 button{
+        background-color: #F2CC8F;
+      width: 150px;
+      height: 50px;
+      border:none;
+      border-radius: 40px;
+      color:white;
+      font-weight: bolder;
+      font-size: 18px;
+      }
+      .svg{
+         position: relative;
+         bottom: 280px;
+      }
+      .fourth-section{
+       /* border: 1px solid black; */
+       height: 670px;
+      }
+      .fourth-section-heading{
+        /* border: 1px solid blue; */
+        position: relative;
+        top: -40px;
+        font-size: 22px;
+        height: 70px;
+      }
+      .fourth-section-content{
+        display: flex;
+        flex-direction: row;
+      }
+      .table{
+         width: 55%;
+         height: 500px;
+         /* border: 7px solid brown; */
+         position: relative;
+         display: flex;
+         /* align-items: center; */
+         justify-content: center;
+      }
+      .p1{
+        height: 400px;
+        width: 600px;
+        border-radius: 30px;
+        overflow: hidden;
+      }
+      .form{
+         width: 35%;
+         height: 430px;
+         border: 1px solid cadetblue;
+         position: relative;
+         background-color: #3d405b;
+         border-radius: 40px;
+      }
+      .form form{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         row-gap: 20px;
+      }
+      .fourth-section-heading2{
+        position: relative;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;  
+      }
+      table{
+        text-align: center;
+      }
+      .table table{
+        overflow: hidden;
+      }
+      .form form input{
+          width: 420px;
+          height: 50px;
+          border-radius: 40px;
+
+      }
+      .form form button{
+          width: 420px;
+          height: 50px;
+          border-radius: 40px;
+          background-color: #F2CC8F;
+          color: white;
+      }
+      .form-heading h1{
+         color: white;
+         position: relative;
+         right: 110px;
+         top: 10px;
+      }
+      .left-heading{
+         position: relative;
+         left: 120px;
+      }
+      .right-heading{
+        position: relative;
+        right: 500px;
+      }
+       .fivth-section{
+         background-color:#F4F1DE;
+         height: 820px;
+         width: 100%;
+       }
+       .fivth-section-heading{
+          height: 100px;
+          width:100%;
+          /* border:1px solid black; */
+       }
+       /* .fivth-section-heading h1 {
+          position: relative;
+          left: 160px;
+          top: 60px;
+       } */
+       .fivth-section-box1{
+           height:300px;
+           width: 100%;
+       }
+       .fivth-section-box2{
+           height:300px;
+           width: 100%;
+       }
+       .part1{
+          width:180px;
+          height: 120px;
+          /* border: 1px solid black; */
+          background-color: #81B29A;
+          border-radius: 20px;
+          position: relative;
+          bottom: 50px;
+       }
+       .part2{
+          width:360px;
+          height: 240px;
+          /* border:1px solid black; */
+          /* display: flex;
+          justify-content: center;
+          align-items: center; */
+          overflow: hidden;
+       }
+       .part2 img{
+          width:360px;
+          height: 240px;
+          border-radius: 30px;
+          transition: 0.3s ease-in-out;
+          transform: scale(1);
+          position: relative;
+       }
+       .part2:hover img{
+        transform: scale(1.1);
+       }
+       /* .part2 img::after{
+          content:"";
+          width:10px;
+          height: 100%;
+          position: absolute;
+          background-color:crimson;
+          display: flex;
+          left:0;
+          top:0 ; 
+       } */
+       
+       .part3{
+          width:550px;
+          height:240px;
+       }
+       .main{
+         width: 1150px;
+         /* border: 8px solid black; */
+         display: flex;
+         flex-direction:row;
+         justify-content: space-around;
+         align-items: center;
+         height:300px;
+         position: relative;
+         left: 170px;
+         top:20px;
+
+       }
+       .part3 div:nth-child(2){
+          display: flex;
+          flex-direction: row;
+       }
+       .fivth-section1 h1{
+          font-family: sans-serif;
+       }
+       .fivth-section1 p{
+        color:#3d405b;
+        font-family: sans-serif;
+       }
+       .fivth-section2 span{
+          font-family: sans-serif;
+          color:#3d405b;
+       }
+       .fivth-section2 button{
+        border-radius: 30px;
+        position: relative;
+        width: 120px;
+        height: 40px;
+        left:150px;
+        top: 20px;
+        background-color: #F2CC8F;
+        color: white;
+        font-weight: bolder;
+        border: none;
+       }
+       .fivth-section2 button:hover{
+          background-color:  #E07B60;
+          cursor: pointer;
+       }
+       .main2{
+         width: 1150px;
+         /* border: 8px solid black; */
+         display: flex;
+         flex-direction:row;
+         justify-content: space-evenly;
+         align-items: center;
+         height:300px;
+         position: relative;
+         left: 170px;
+         top:20px;
+         background-color: white;
+         border-radius: 30px;
+       }
+       .sixth-section-content{
+           /* border: 2px solid black; */
+           width: 1250px;
+           height: 400px;
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           align-items: center;
+           column-gap: 40px;
+       }
+       .sixth-section{
+         height: 70vh;
+         /* border: 2px solid brown; */
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           align-items: center;
+       }
+       .sixth-section-left{
+          height: 350px;
+          width: 600px;
+          /* border: 2px solid blue; */
+          position: relative;
+       }
+       .sixth-section-left form div:nth-child(1){
+            display: flex; 
+            column-gap: 20px;
+            position: relative;
+            left: 20px;
+       }
+       .sixth-section-left form div:nth-child(1) input{
+            display: flex;  
+            width: 250px;
+            height: 50px;
+            border-radius: 40px;
+       }
+       .sixth-section-left form div:nth-child(2){
+            display: flex;   
+            flex-direction: column; 
+       }
+       .sixth-section-right{
+          height: 350px;
+          width: 600px;
+          /* border: 2px solid blue; */
+         
+       }
+       .sixth-section-left form{    
+          display: flex;
+          flex-direction: column;
+          row-gap: 25px;
+       }
+       .sixth-section-left button{
+        height:45px;
+        width:520px;
+        border-radius: 20px;
+        position: relative;
+        top: 15px;left: 20px;
+        background-color:#F2CC8F;
+        color: white;
+        border: none;
+        font-weight: bolder;
+        font-size: 17px;
+       }
+       .sixth-section-right img{
+          height: 250px;
+          width: 600px;
+          position: relative;
+          top: 50px;
+          
+       }
+       .sixth-section-right-box{
+          height: 150px;
+          width: 230px;
+          /* border: 4px solid black; */
+          position: relative;
+          left: 170px;
+          bottom: 150px;
+          border-radius: 30px;
+          overflow: hidden;
+         
+         
+       }
+      .sixth-section-right-box div:nth-child(2){
+          height: 50px;
+          width: 100%;
+          background-color:#E07B60;
+          color: white;
+          display: flex;
+          align-items: center;
+      }
+      .sixth-section-right-box div:nth-child(1){
+          background-color: #3d405b;
+          color: white;
+          display: flex;
+          align-items: center;
+          text-align: center;
+      }
+      .sixth-section-left h1{
+          font-size: 33px;
+          position: relative;
+          left: 20px;
+          bottom: 10px;
+      }
+       .seventh-section-main{
+            /* border: 8px solid violet;   */
+            display: flex; 
+       }
+       .seventh-section-left{
+           width: 700px;
+           height: 100%;
+           /* border: 8px solid yellow; */
+           display: flex;
+           position: relative;
+           left:100px;
+       } 
+       .seventh-section-right{
+           width: 55%;
+           height: 100%;
+           /* border: 1px solid red; */
+       }
+
+       .seventh-section-left img{
+       /* border: 1px solid aqua; */
+       height: 55px;
+
+     } 
+
+     .seventh-section-left div h1{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:23px;
+     } 
+      .seventh-section-left div p{
+        padding: 0;
+        margin: 0;
+         font-size:10px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-weight:700;
+     } 
+      .seventh-section-right{
+        display: flex;
+     } 
+     .seventh-section-right div:nth-child(1){
+         width:35%;
+         height:100%;
+         /* border:2px solid red; */
+     } 
+      .seventh-section-right div:nth-child(2){
+         width:50%;
+         height:100%;
+         /* border:2px solid blue; */
+         position: relative;
+         top:60px ;
+         left: 100px;
+     } 
+      .seventh-section-whole{
+         /* border: 8px solid brown;   */
+         box-sizing: border-box; 
+     } 
+     /* .svg7{
+          position: relative;
+          top: -150px;
+          margin: 0;
+          padding: 0;
+     }  */
+     .socials i{
+       padding:10px 12px;
+       font-size:15px;
+       border-radius: 50%;
+     }
+     .option{
+        width:150px;
+        height:60px;
+        background-color:red;
+        border-radius: 25px;
+        position: absolute;
+        border-radius: 25px;
+        display: none;
+     }
+     
+    </style>
+  </head>
+  <body>
+      <section class="first-section">
+        <div class="curve">
+          <svg
+            width="100%"
+            height="100%"
+            id="svg"
+            viewBox="0 0 1440 390"
+            xmlns="http://www.w3.org/2000/svg"
+            class="transition duration-300 ease-in-out delay-150"
+          >
+            <path
+              d="M 0,400 C 0,400 0,200 0,200 C 86.68899521531102,151.38755980861242 173.37799043062205,102.77511961722487 257,129 C 340.62200956937795,155.22488038277513 421.17703349282294,256.2870813397129 540,253 C 658.8229665071771,249.7129186602871 815.913875598086,142.07655502392348 908,137 C 1000.086124401914,131.92344497607652 1027.1674641148327,229.40669856459328 1105,257 C 1182.8325358851673,284.5933014354067 1311.4162679425835,242.29665071770336 1440,200 C 1440,200 1440,400 1440,400 Z"
+              stroke="none"
+              stroke-width="0"
+              fill="#3d405b"
+              fill-opacity="1"
+              class="transition-all duration-300 ease-in-out delay-150 path-0"
+              transform="rotate(-180 720 200)"
+            ></path>
+          </svg>
+        </div>
+         <section class="header">
+           <section class="header-left-section">
+               <img src="images/logo.png" />
+               <div>
+                <h1>Tiya</h1>
+                <p>GOLF CLUB</p>
+               </div>      
+            </section>
+            <section class="header-right-section">
+               <a>Home</a>
+               <a>About</a>
+               <a>Membership</a>
+               <a>Events</a>
+               <a>Contact us</a>
+               <a>Pages &nbsp;&#9662;</a>
+               <button>Member Login</button>
+            </section>
+          </section>
+      <section>
+        <!-- <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 96.61244019138758,184.5263157894737 193.22488038277515,169.05263157894737 298,177 C 402.77511961722485,184.94736842105263 515.7129186602871,216.31578947368422 621,238 C 726.2870813397129,259.6842105263158 823.9234449760764,271.6842105263157 897,269 C 970.0765550239236,266.3157894736843 1018.5933014354066,248.94736842105266 1105,235 C 1191.4066985645934,221.05263157894734 1315.7033492822966,210.52631578947367 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg> -->
+        <!-- <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 51.24355891446238,220.68498797664034 102.48711782892477,241.36997595328066 174,218 C 245.51288217107523,194.63002404671934 337.2950875987633,127.20508416351768 407,139 C 476.7049124012367,150.79491583648232 524.332531776022,241.80968739264858 583,255 C 641.667468223978,268.1903126073514 711.3747852971487,203.556166265888 793,170 C 874.6252147028513,136.443833734112 968.1683270353831,133.96564754379938 1041,141 C 1113.831672964617,148.03435245620062 1165.951906561319,164.58124355891448 1229,176 C 1292.048093438681,187.41875644108552 1366.0240467193405,193.70937822054276 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg> -->
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 83.60906904843696,171.67021642047405 167.21813809687393,143.34043284094813 237,162 C 306.78186190312607,180.65956715905187 362.73651666094133,246.30848505668155 424,268 C 485.26348333905867,289.69151494331845 551.8357952593609,267.4256269323257 616,243 C 680.1642047406391,218.57437306767432 741.9203023016147,191.98900721401577 816,199 C 890.0796976983853,206.01099278598423 976.4829955341806,246.61834421161115 1053,262 C 1129.5170044658194,277.38165578838885 1196.1477155616628,267.5376159395397 1259,253 C 1321.8522844383372,238.4623840604603 1380.9261422191685,219.23119203023015 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+      </section>
+      <section class="main-con">
+           <div class="main-content">
+              <div>
+               <h1>Welcome to the club<br>Tiya is Creative</h1>
+              </div>
+              <div>
+               <button>Our Story</button>
+               <h3>Become a member</h3z>
+               </div>
+           </div>
+           <div class="youtube">
+                 
+           </div>
+      </section>
+    </section>
+    <section class="second-section">
+         <div class="second-section-heading">
+              <center><h1 style="font-size: 30px;">About Tiya</h1><br></center>
+         </div>
+         <div class="second-section-content">
+             <div class="second-section-content-first">
+                  <h2 style="display: flex;align-items: flex-start;justify-content: left;width: 35vw;">Tiya Club Histoy</h2>
+                  <p >Since 1984, Tiya is ranked #8 in the top 10 golf courses in the world. Tiya is Bootstrap 5 HTML CSS template for golf clubs. Anyone can modify and use this layout for commercial purposes.</p>
+                  <p>Tiya Golf Club is 100% free CSS template provided by TemplateMo website. Please tell your friends about our website. <br>Thank you for visiting.</p>
+             </div>
+             <div class="second-section-content-second">
+                   <div>
+                  <img src="images/members/portrait-young-handsome-businessman-wearing-suit-standing-with-crossed-arms-with-isolated-studio-white-background.jpg">
+                  <div class="option">
+                        
+                  </div>
+                  </div>
+                  <div>
+                      <span style="margin-left:15px ;">Michael</span>
+                      <span style="color:gray;margin-right: 15px;">Founder</span>
+                  </div> 
+             </div>
+             <div class="second-section-content-third">
+                <div>
+                <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg"> 
+                </div>
+                <div>
+                  <span style="margin-left:15px">Sandy</span>
+                  <span style="color:gray;margin-right: 15px;">Co-Founder</span>
+                </div>
+         </div>
+    </section>
+    <section class="third-section">
+          <div>
+            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 53.567159051872196,220.16283064239093 107.13431810374439,240.3256612847819 181,218 C 254.8656818962556,195.6743387152181 349.0298866368946,130.86018550326347 424,132 C 498.9701133631054,133.13981449673653 554.7461353486774,200.23359670216425 614,225 C 673.2538646513226,249.76640329783575 735.9855719683957,232.2054276880797 816,221 C 896.0144280316043,209.7945723119203 993.3115767777397,204.944692545517 1063,214 C 1132.6884232222603,223.055307454483 1174.7681209206457,246.0158021298523 1233,246 C 1291.2318790793543,245.9841978701477 1365.6159395396771,222.99209893507384 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path></svg>
+          </div>
+          <div class="third-section-box">
+                <div class="third-section-box-header">
+                     <h1>Get our newsletter</h1>
+                </div>
+                <div class="third-section-box-content">
+                      <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br>eiusmod tempor ut labore et dolore.</p>
+                </div>
+          </div>
+          <div class="third-section-box2">
+            <div>
+              <span><i class="fa fa-envelope" aria-hidden="true"></i></span> 
+              <span style="color: gray;font-size: 18px;font-family: sans-serif;">Email Address</span>
+            </div>
+            <div>
+              <button>Subscribe</button>
+            </div>    
+          </div>
+          <div class="svg">
+            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 50.020611473720365,212.7935417382343 100.04122294744073,225.58708347646856 168,212 C 235.95877705255927,198.41291652353144 321.85571968395743,158.44520783236004 407,150 C 492.14428031604257,141.55479216763996 576.5358983167296,164.6320851940914 653,160 C 729.4641016832704,155.3679148059086 798.0006870491242,123.02645139127446 854,137 C 909.9993129508758,150.97354860872554 953.4613534867742,211.2621092408107 1007,228 C 1060.5386465132258,244.7378907591893 1124.1538990037789,217.92511164548267 1198,206 C 1271.8461009962211,194.07488835451733 1355.9230504981106,197.03744417725866 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+          </div>
+    </section>
+    <section class="fourth-section">
+        <div class="fourth-section-heading">
+          <center><h1 style="font-family: sans-serif;">Membership at Tiya</h1></center>
+        </div>
+        <div class="fourth-section-heading2">
+             <div class="left-heading">
+                  <h1>Membership Fees</h1>
+             </div>
+             <div class="right-heading">
+                  <h1>Please join us!</h1>
+             </div>
+        </div>
+        <div class="fourth-section-content">
+              <div class="table">
+                   <div class="p1">
+                   <table style="height: 400px;width: 600px;overflow: hidden; border-collapse: collapse;" >
+                       <tr style="background-color: #3d405b;color:white">
+                          <th>Yearly Access</th>
+                          <th>T1$420</th>
+                          <th>T2$640</th>
+                          <th>T3$860</th>
+                       </tr>
+                       <tr>
+                         <th>Golf Insurance</th>
+                         <td><i class="fa-sharp fa-solid fa-circle-check" style="color:#85B49D;"></i></td>
+                         <td><i class="fa-sharp fa-solid fa-circle-check" style="color:#85B49D;"></i></td>
+                         <td><i class="fa-sharp fa-solid fa-circle-check" style="color:#85B49D;"></i></td>
+                       </tr>
+                       <tr  style="background-color: #F4F1DE">
+                        <th>Club Facilities</th>
+                        <td><i class="fa-sharp fa-solid fa-circle-check" style="color: #85B49D;"></i></td>
+                        <td><i class="fa-sharp fa-solid fa-circle-check" style="color: #85B49D;"></i></td>
+                        <td><i class="fa-sharp fa-solid fa-circle-check" style="color: #85B49D;"></i></td>
+                      </tr>
+                      <tr>
+                        <th>Country Club</th>
+                        <td><i class="fa-solid fa-circle-xmark" style="color: #E07B60;"></i></td>
+                        <td><i class="fa-sharp fa-solid fa-circle-check" style="color: #85B49D"></i></td>
+                        <td><i class="fa-sharp fa-solid fa-circle-check" style="color: #85B49D"></i></td>
+                      </tr>
+                      <tr  style="background-color: #F4F1DE">
+                        <th>Weekend Seasonal</th>
+                        <td><i class="fa-solid fa-circle-xmark" style="color: #E07B60;"></i></td>
+                        <td><i class="fa-sharp fa-solid fa-circle-check" style="color: #85B49D"></i></td>
+                        <td><i class="fa-sharp fa-solid fa-circle-check" style="color: #85B49D"></i></td>
+                      </tr>
+                      <tr>
+                        <th>Premium Courses</th>
+                        <td><i class="fa-solid fa-circle-xmark" style="color: #E07B60;"></i></td>
+                        <td><i class="fa-solid fa-circle-xmark" style="color: #E07B60;"></td>
+                        <td><i class="fa-sharp fa-solid fa-circle-check" style="color: #85B49D;"></i></td>
+                      </tr>
+                      <tr  style="background-color: #F4F1DE">
+                        <th>Pro's Networking</th>
+                        <td><i class="fa-solid fa-circle-xmark" style="color: #E07B60;"></i></td>
+                        <td><i class="fa-solid fa-circle-xmark" style="color: #E07B60;"></td>
+                        <td><i class="fa-sharp fa-solid fa-circle-check" style="color: #85B49D;"></i></td>
+                      </tr>
+                   </table>
+                  </div>
+              </div>
+              <div class="form">
+                   <form>
+                        <div class="form-heading">
+                          <h1>Become a Member</h1>
+                        </div>
+                       <input type="text" placeholder="Full Name"/>
+                       <input type="text" placeholder="Email Address"/>
+                       <input type="text" placeholder="Comments" style="height: 100px; border-radius: 25px;"/>
+                       <button >Submit</button>
+                   </form>
+              </div>
+        </div>
+    </section>
+    <section class="fivth-section">
+         <div class="fivth-section-heading">
+              <h1 style="font-size:35px;font-family: sans-serif;">Upcoming Events</h1> 
+         </div>
+         <div class="fivth-section-box1">
+               <div class="main">
+                    <div class="part1">
+                         <p style="font-size: 38px;text-align: center;font-family: sans-serif;margin-top:20px;">24</p>
+                         <h2 style="color: white;font-size: 17px;font-family: sans-serif;text-align: center;margin-top: -32px;">Feb 2048</h2>
+                    </div>
+                    <div class="part2">
+                         <img src="images/professional-golf-player.jpg">
+                    </div>
+                    <div class="part3">
+                          <div class="fivth-section1">
+                              <h1>Private activities</h1>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><hr>
+                          </div>
+                          <div class="fivth-section2">
+                                <div> 
+                                  <b>Location</b><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  National Center, NYC</span><br><br>
+                                   <b>Ticket</b><span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $250</span>
+                                </div>
+                                <div>
+                                    <button>Buy Ticket</button>
+                                </div>
+          
+                                
+                          </div>
+                    </div>
+               </div>
+         </div>
+         <div class="fivth-section-box2">
+          <div class="main2">
+            <div class="part1">
+                 <p style="font-size: 38px;text-align: center;font-family: sans-serif;margin-top:20px;">28</p>
+                 <h2 style="color: white;font-size: 17px;font-family: sans-serif;text-align: center;margin-top: -32px;">Feb 2048</h2>
+            </div>
+            <div class="part2">
+                 <img src="images/girl-taking-selfie-with-friends-golf-field.jpg">
+            </div>
+            <div class="part3">
+                  <div class="fivth-section1">
+                      <h1>Group tournament activities</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><hr>
+                  </div>
+                  <div class="fivth-section2">
+                        <div> 
+                          <b>Location</b><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  National Center, NYC</span><br><br>
+                           <b>Ticket</b><span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $350</span>
+                        </div>
+                        <div>
+                            <button>Buy Ticket</button>
+                        </div>
+  
+                  </div>
+            </div>
+       </div>
+                 
+         </div>
+    </section>
+    <section class="sixth-section">
+      <div class="sixth-section-content">
+           <div class="sixth-section-left">
+                    <h1>Contact Tiya</h1>
+                    <form>
+                       <div>
+                        <input type="text" placeholder="Full Name"/>
+                        <input type="text" placeholder="Email Address" />
+                       </div>
+                      <div>
+                        <input type="textarea" placeholder="Message" style="height: 120px ;width:520px;border-radius: 20px;position: relative;left: 25px;"/>
+                        <button>Submit Form</button>
+                      </div>
+                    </form>
+           </div>
+           <div class="sixth-section-right">
+                  <div>
+                    <img src="images/WorldMap.svg">
+                    <div class="sixth-section-right-box">
+                           <div>
+                                 <h3 style="font-family: sans-serif;font-size: 17px;font-weight: 300;">
+                                  London, United Kingdom
+                                  (020) 010-020-0340
+                                  info@company.com
+                                 </h3>
+                           </div>
+                           <div>
+                               <h1 style="position: relative;left: 75px;font-family: sans-serif;font-size: 18px;">Directions</h1>
+                           </div>
+                    </div>
+                  </div>
+                  
+           </div>
+      </div> 
+      
+    </section>
+    <section class="seventh-section">
+      <div class="seventh-section-whole">
+           <div class="seventh-section-main">
+                <div class="seventh-section-left">
+                  <img src="images/logo.png" />
+                     <div>
+                        <h1>Tiya</h1>
+                         <p>GOLF CLUB</p>
+                     </div>  
+                </div>
+                <div class="seventh-section-right">
+                       <div>
+                             <p style="color:#3d405b;font-weight: 500;font-size: 22px;">Join Us</p>
+                             <p style="color:#717275;font-family: sans-serif;font-weight: 500;font-size: 18px;">Mon-Fri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6:00 AM - 6:00 PM</p><hr>
+                             <p style="color:#717275;font-family: sans-serif;font-weight: 500;font-size: 18px">Sat-Sun &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6:30 AM - 8:30 PM</p><br>
+                             <p style="color:#717275;font-family: sans-serif;font-weight: 500;font-size: 18px">Copyright © 2048 Tiya Golf Club</p>
+                       </div>
+                       <div class="socials">                  
+                              <i class="fa-brands fa-instagram" style="color: #ffffff;background-color: #3d405b"></i>
+                              <i class="fa-brands fa-twitter" style="color: #ffffff;background-color:#3d405b;"></i>
+                              <i class="fa-brands fa-whatsapp" style="color: #ffffff;background-color: #3d405b;"></i>
+                              <p style="color:#717275;font-family: sans-serif;font-weight: 500;font-size: 18px">Design: TemplateMo</p>
+                       </div>
+                </div>
+            </div>
+            <div>
+              <svg class=svg7 width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 79.99043062200957,154.88995215311004 159.98086124401914,109.77990430622009 260,134 C 360.01913875598086,158.2200956937799 480.06698564593296,251.7703349282296 577,261 C 673.933014354067,270.2296650717704 747.7511961722488,195.13875598086128 842,187 C 936.2488038277512,178.86124401913872 1050.9282296650717,237.67464114832535 1154,251 C 1257.0717703349283,264.32535885167465 1348.5358851674641,232.16267942583733 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#81b29a" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+             </div>
+          </div>
+    </section>
+  </body>
+</html>
